@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/seven-segment" rel="stylesheet">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <div class="calculator-body">
+        <div class="logo"> Morley Calculators</div>
+        <div id="display" class="screen">_</div>
+        <div class="button-content">
+            <div class="row">
+                <button class="operator" onclick="clearDisplay()">Clear</button>
+                <button class="operator" onclick="undo()">&#x21a9;</button>
+                <button class="operator" onclick="back()">↑</button>
+                <button class="operator" onclick="getInput('/')">&divide;</button>
+            </div>
+            <div class="row">
+                <button class="number" onclick="getInput(7)">7</button>
+                <button class="number" onclick="getInput(8)">8</button>
+                <button class="number" onclick="getInput(9)">9</button>
+                <button class="operator" onclick="getInput('*')">&times;</button>
+            </div>
+            <div class="row">
+                <button class="number" onclick="getInput(4)">4</button>
+                <button class="number" onclick="getInput(5)">5</button>
+                <button class="number" onclick="getInput(6)">6</button>
+                <button class="operator" onclick="getInput('-')">&minus;</button>
+            </div>
+            <div class="row">
+                <button class="number" onclick="getInput(1)">1</button>
+                <button class="number" onclick="getInput(2)">2</button>
+                <button class="number" onclick="getInput(3)">3</button>
+                <button class="operator"onclick="getInput('+')">&plus;</button>
+            </div>
+            <div class="row">
+                <button class="number" onclick="getInput(0)">0</button>
+                <button class="number" onclick="getInputDecimal()"></button>
+                <button class="number" onclick="getInputDecimal()">.</button>
+                <button class="enter" onclick="enter()">ENTR</button>
+            </div>
+        </div>
+    </div>
+    <div id="limit"> Display Limit</div>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+@import url('https://fonts.cdnfonts.com/css/seven-segment');
+
+body {
+    background-color: #e8ded1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.calculator-body {
+    width: 300px;
+    height: 450px;
+    background-color: #0d1f3d;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px black;
+}
+
+.logo {
+    color: white;
+    align-self: center;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.screen {
+    font-family: 'Seven Segment', sans-serif;
+    border: 2px solid black;
+    margin: 30px 20px;
+    text-align: right;
+    padding: 12px;
+    font-size: 42px;
+    height: 42px;
+    background-color: #8c8778;
+    letter-spacing: 4px;
+    overflow: hidden;
+}
+
+.button-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    height: 40px;
+    padding: 5px 24px;
+    gap: 5px;
+    justify-content: center;
+}
+
+.number,
+.operator,
+.enter {
+    flex: 1;
+    font-weight: bold;
+}
+
+.power {
+    background-color: orange;
+
+}
+
+.operator {
+    background-color: #203241;
+    color: white
+}
+
+.number {
+    border: 2px solid grey;
+}
+
+.enter {
+    background-color: orange;
+}
+
+button:active {
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
+}
+
+#limit {
+    margin-top: 20px;
+    color: red;
+    font-weight: bold;
+    display:none;
+    font-size: 20px;
+}
+
+
